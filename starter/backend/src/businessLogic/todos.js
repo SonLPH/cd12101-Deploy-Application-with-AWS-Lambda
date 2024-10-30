@@ -18,6 +18,16 @@ function getUserId(event) {
 
 export async function createTodo(event) {
   const newTodo = JSON.parse(event.body)
+
+  if (!newTodo.name || newTodo.name.length < 3) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: "Invalid request: 'name' is required and must be at least 3 characters long."
+      })
+    }
+  }
+
   const itemId = uuid.v4()
   const userId = getUserId(event)
 

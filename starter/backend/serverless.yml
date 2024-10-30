@@ -20,6 +20,19 @@ provider:
     TODOS_USER_INDEX: TodosUserIndex
     IMAGES_S3_BUCKET: udagram-images-project4
 
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - "xray:PutTraceSegments"
+        - "xray:PutTelemetryRecords"
+      Resource:
+        - '*'
+
+  tracing:
+    apiGateway: true
+    lambda: true
+
+
   # iam:
   #   role:
   #     statements:

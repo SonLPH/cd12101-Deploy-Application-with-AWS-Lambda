@@ -29,6 +29,7 @@
     "serverless-dynamodb-local": "^0.2.40",
     "serverless-iam-roles-per-function": "^3.2.0",
     "serverless-offline": "^14.3.3",
+    "serverless-plugin-tracing": "^2.0.0",
     "serverless-reqvalidator-plugin": "^3.1.0"
   }
 }
