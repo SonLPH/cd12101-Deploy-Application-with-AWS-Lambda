@@ -1,0 +1,5 @@
+  GET - https://aiaih8bkrb.execute-api.us-east-1.amazonaws.com/dev/todos
+  POST - https://aiaih8bkrb.execute-api.us-east-1.amazonaws.com/dev/todos
+  PATCH - https://aiaih8bkrb.execute-api.us-east-1.amazonaws.com/dev/todos/{todoId}
+  DELETE - https://aiaih8bkrb.execute-api.us-east-1.amazonaws.com/dev/todos/{todoId}
+  POST - https://aiaih8bkrb.execute-api.us-east-1.amazonaws.com/dev/todos/{todoId}/attachment
